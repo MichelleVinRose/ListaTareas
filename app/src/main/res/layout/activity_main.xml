@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondopantalla"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lista de tareas"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:textColor="@color/white"
+        android:layout_margin="20dp"
+        />
+    <EditText
+        android:id="@+id/edit_tarea"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="20dp"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:hint="Escribe la tarea"
+        android:textColorHint="#D1CDCD"
+        android:textColor="@color/white"
+        />
+    <Button
+        android:id="@+id/btn_agregar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar tarea"
+        android:layout_marginHorizontal="20dp"
+        android:backgroundTint="#F3F6F8"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
+    <ListView
+        android:id="@+id/listV_tareas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"
+        />
+
+</LinearLayout>
